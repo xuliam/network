@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+	height: 62px;
+	margin-top: -62px;
+	content: "";
+	display: block;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+	padding: .6rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	background-color: rgba(57, 63, 70, .9)!important;
+}
+.navbar-brand img {
+	height: 2rem;
+}
+.navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: #00B3FF;
+}
+.svg-inline--fa.fa-w-14 {
+	color: white;
+	font-size: 1.6rem;
+}
+.navbar-nav li {
+	padding-right: .8rem;
+}
+
+/*============= LANDING PAGE =============*/
+
+.home-inner {
+	background-image: url('img/landing.png');
+}
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+}
+.caption h3 {
+	color: white;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+}
+.btn {
+	border-width: medium;
+	border-radius: 0;
+	padding: .5rem 1.1rem;
+	font-size: .9rem;
+	text-transform: uppercase;
+}
+
+/*============= ABOUT SECTION =============*/
+
+.jumbotron {
+	margin-bottom: 0;
+	border-radius: 0;
+	padding: 3rem 0 3rem;
+}
+.narrow {
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 1rem;
+}
+h3.heading {
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1.9rem;
+}
+.heading-underline {
+	width: 3rem;
+	height: .2rem;
+	background-color: #00B3FF;
+	margin: 0 auto 2rem;
+}
+.about svg.svg-inline--fa {
+	color: #00B3FF;
+	margin: 1rem auto;
+}
+.about h3 {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding-bottom: .4rem;
+}
+.about p {
+	font-size: 1.1rem;
+}
+
+/*============= PORTFOLIO SECTION =============*/
+
+.padding {
+	padding: 2rem 0;
+}
+.no-padding [class*=col-] {
+	padding: 0;
+}
+img.example-image {
+	max-width: 100%;
+}
+.portfolio-item img {
+	transition: transform .4s ease;
+}
+.portfolio-item img:hover {
+	transform: scale(1.1);
+	cursor: zoom-in;
+}
+.portfolio-item {
+	overflow: hidden;
+}
+
+/*============= TESTIMONIALS SECTION =============*/
+
+.card {
+	margin: 0 1rem;
+	border-radius: 0;
+}
+.card-img-top {
+	border-radius: 0;
+}
+.card h4 {
+	font-weight: 700;
+}
+.card h5 {
+	color: #00B3FF;
+}
+.card p {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	margin: 1rem 0 1.5rem;
+}
+
+/*============= CONTACT SECTION =============*/
+
+.footer .row {
+	background-color: rgba(57, 63, 70, .85);
+	padding: 1rem 2rem 3rem;
+	color: white;
+}
+.footer img {
+	height: 2rem;
+	margin: 1.5rem 0;
+}
+.footer a {
+	color: white;
+}
+.footer svg.svg-inline--fa {
+	margin: 1.2rem .5rem 0 0;
+}
+.footer svg.svg-inline--fa:hover {
+	color: #00B3FF!important;
+}
+.footer h3 {
+	text-transform: uppercase;
+	margin: 1.5rem 0;
+}
+
+/*--- Contact Form --*/
+.form-group {
+	margin-bottom: 1.3rem;
+}
+.form-control {
+	background: #53595f;
+	border-radius: 0;
+	border: .15rem solid #666b71;
+	color: white!important;
+}
+.form-control:focus {
+	background: #53595f;
+	border: .15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+	color: #b2b5b8!important;
+}
+input.btn {
+	cursor: pointer;
+}
+hr.socket {
+	width: 100%;
+	border-top: .2rem solid #666b71;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Medium (md) devices (tablets, 768px and under) */
+
+@media (max-width: 768px) {
+	.caption {
+		top: 35%;
+	}
+	.caption h3 {
+		font-size: 1.8rem;
+		padding-bottom: 1.2rem;
+	}
+}
+
+/*===========second page==============*/
+/*.row {*/
+/*	display: -ms-flexbox; !* IE10 *!*/
+/*	display: flex;*/
+/*	-ms-flex-wrap: wrap; !* IE10 *!*/
+/*	flex-wrap: wrap;*/
+/*	margin: 0 -16px;*/
+/*}*/
+
+.col-25 {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+}
+
+.col-50 {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+}
+
+.col-75 {
+	-ms-flex: 75%; /* IE10 */
+	flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+	padding: 0 16px;
+}
+
+.container {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+
+input[type=text] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+label {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.icon-container {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+}
+
+/*.btn {*/
+/*	background-color: #4CAF50;*/
+/*	color: white;*/
+/*	padding: 12px;*/
+/*	margin: 10px 0;*/
+/*	border: none;*/
+/*	width: 100%;*/
+/*	border-radius: 3px;*/
+/*	cursor: pointer;*/
+/*	font-size: 17px;*/
+/*}*/
+
+.btn:hover {
+	background-color: #45a049;
+}
+
+span.price {
+	float: right;
+	color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+	.row {
+		flex-direction: column-reverse;
+	}
+	.col-25 {
+		margin-bottom: 20px;
+	}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

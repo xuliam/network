@@ -1,0 +1,13 @@
+Alternative Contact Form Theme Version
+
+The PHPMailer plugin used for the contact form in the Nest theme, as mentioned in the contact form customization video lesson, is meant to send mail from the same domain name server that the website is uploaded to (i.e w3newbie.com / drew@w3newbie.com).
+
+Using a gmail address or another email provider other than your own domain name address requires using the email providers SMTP email server. Using an alternative email address with the original contact form within the theme could also require a number of tweaks to the php in the form as well as configuration within the email provider, such as gmail.
+
+So what we have with the 'Alternative Contact Form' version of the theme is a PHP contact form operating without the use of PHPMailer so you can send mail to any email address you wish.
+
+With this form the file index.html has been changed to index.php fo the form can function right on the index page itself. The files index.php and style.css have been changed to accommodated the alternative form and all PHPMailer related files removed from this version of the theme. At the top of index.php you can add your gmail address for example on line 41 to send mail. Please note that you need to have PHP installed to see the content displayed properly as it will not appear on a web browser like html files do.
+
+Let me know if you have any questions.
+
+-Drew

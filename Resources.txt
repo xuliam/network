@@ -1,0 +1,28 @@
+Resources
+
+Bootstrap:
+https://getbootstrap.com/
+
+Pexels:
+https://www.pexels.com/
+
+Font Awesome:
+https://fontawesome.com/
+
+Color Hex:
+http://www.color-hex.com/
+
+Sublime Text:
+https://www.sublimetext.com/
+
+_
+
+How To Publish Your Website Online:
+
+https://www.youtube.com/watch?v=CPHN7-6f5jA&t
+
+
+Web Hosting (recommended):
+
+Blue Host:
+https://www.bluehost.com/track/w3newbie
