@@ -46,3 +46,17 @@ $(function () {
 function myFunction() {
     alert("Your message has been sent!");
 }
+
+window.onload=function(){
+    var oTxt1=document.getElementById('1');
+    var oTxt2=document.getElementById('2');
+    var oTxt3=document.getElementById('3');
+    var oTxt4=document.getElementById('4');
+    var oTxt5=document.getElementById('4');
+    var oBtn=document.getElementById('btn1');
+
+    oBtn.onclick=function(){
+        alert("Hi "+ oTxt1.value+"! Thanks for purchasing our product using your Visa credit card no. "+oTxt2.value+". We will email your receipt on "+oTxt3.value+" and send the product to "+oTxt4.value);
+    };
+
+}
