@@ -15,7 +15,7 @@
 <body data-spy="scroll" data-target="#navbarResponsive">
 
 <!--- Start Home Section -->
-<div id="home">
+<div id="home" >
 
     <!--- Navigation -->
     <nav class="navbar navbar-expand-md fixed-top">
@@ -60,23 +60,23 @@
                     <div class="row">
                         <div class="col-50">
                             <h3>Billing Address</h3>
-                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                            <input type="text" id="email" name="email" placeholder="john@example.com">
-                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                            <label for="city"><i class="fa fa-institution"></i> City</label>
-                            <input type="text" id="city" name="city" placeholder="New York">
+                            <label for="fname"><i class="fas fa-user-circle"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required="true">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com" required="true">
+                            <label for="adr"><i class="fas fa-address-card"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required="true">
+                            <label for="city"><i class="fas fa-city"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York" required="true">
 
                             <div class="row">
                                 <div class="col-50">
                                     <label for="state">State</label>
-                                    <input type="text" id="state" name="state" placeholder="NY">
+                                    <input type="text" id="state" name="state" placeholder="NY" required="true">
                                 </div>
                                 <div class="col-50">
                                     <label for="zip">Zip</label>
-                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                    <input type="text" id="zip" name="zip" placeholder="10001" required="true">
                                 </div>
                             </div>
                         </div>
@@ -88,30 +88,30 @@
 
 
 
-                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                <i class="fab fa-cc-mastercard"></i>
 
-                                    <input type="radio" name="gender" value="male"> master<br>
-                                <i class="fa fa-cc-visa" style="radio"></i>
-                                    <input type="radio" name="gender" value="female"> visa<br>
-                                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                    <input type="radio" name="gender" value="other"> alipay<br>
-                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <input type="radio" > master<br>
+                                <i class="fab fa-cc-visa"></i>
+                                    <input type="radio" > visa<br>
+                                <i class="fab fa-cc-amex"></i>
+                                    <input type="radio" > AmEx<br>
+
                             </div>
                             <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required="true">
                             <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required="true">
                             <label for="expmonth">Exp Month</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September" required="true">
 
                             <div class="row">
                                 <div class="col-50">
                                     <label for="expyear">Exp Year</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018" required="true">
                                 </div>
                                 <div class="col-50">
                                     <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                    <input type="text" id="cvv" name="cvv" placeholder="352" required="true">
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,8 @@
                     <label>
                         <input type="checkbox" checked="checked" name="sameadr"> I have read the terms and conditions
                     </label>
-                    <input type="submit" value="Continue to checkout" class="btn">
+<!--                    <input type="submit" value="Continue to checkout" class="btn">-->
+                    <button type="submit" class="btn btn-info">Payment</button>
                 </form>
             </div>
         </div>
@@ -129,7 +130,41 @@
     </div>
     <!--- End Landing Page Image -->
 
-</html>
+
+
+<div class="container-fluid">
+    <div class="row">
+         <div class= "col-md-3">
+                <img class="example-image"  src="img/portfolio/1.png" >
+        </div>
+        <div class= "col-md-3">
+                <img class="example-image"   src="img/portfolio/2.png" >
+        </div>
+        <div class= "col-md-3">
+                <img class="example-image" src="img/portfolio/3.png">
+        </div>
+        <div class= "col-md-3">
+                <img class="example-image" src="img/portfolio/4.png">
+        </div>
+    </div>
+    <hr class="socket">
+    &copy; Design by love.
+</div>
+
+<!--<div class="container-fluid">-->
+<!--    <h1>Hello World!</h1>-->
+<!--    <div class="row">-->
+<!--        <div class="col-xs-6 col-sm-3" style="background-color:lavender;">-->
+<!--            Column 1<br>-->
+<!--            Resize the browser window to see the effect. Also try to remove the div clearfix line and see what happens.-->
+<!--        </div>-->
+<!--        <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">Column 2</div>-->
+<!--        &lt;!&ndash; Add clearfix for only the required viewport &ndash;&gt;-->
+<!--        <div class="clearfix visible-xs"></div>-->
+<!--        <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">Column 3</div>-->
+<!--        <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">Column 4</div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!--- Script Source Files -->
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -141,3 +176,4 @@
 <script src="js/contact.js"></script>
 <!--- End of Script Source Files -->
 </body>
+</html>
